@@ -21,7 +21,7 @@ $montant = $_GET['montant'];
 //$rec nom du compte
 $rec=$_GET['rec';]
 
-Exemple https://www.votreserveur.com/API_MOBICASH.php?url=http:ipmobicash.com/webservice&tel=70000000&pin=1010&montant=1000&rec=demouser
+Exemple https://www.votreserveur.com/API_MOBICASH.php?url=http://ipmobicash.com/webservice&tel=70000000&pin=1010&montant=1000&rec=demouser
 
 
 ATTENTION  
