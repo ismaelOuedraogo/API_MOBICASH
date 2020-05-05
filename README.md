@@ -32,7 +32,7 @@ pin
 
 montant
 
-Exemple https://www.votreserveur.com/API_MOBICASH.php?tel=70000000&pin=1010&montant=1000&
+Exemple https://www.votreserveur.com/API_MOBICASH.php?tel=70000000&pin=1010&montant=1000
 
 retour
 
