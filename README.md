@@ -1,27 +1,45 @@
 # API_MOBICASH
 API  JSON du systeme de  paiement Mobicash de l'Opérateur Burkinabè ONATEL
 
-Préréquis Une connexion VPN entre votre serveur et ceux de mobicash est nécéssaire
-le fichier API_MOBICASH.php
+Préréquis: 
+1)Une connexion VPN entre votre serveur et celui de mobicash est nécéssaire
+2)le fichier API_MOBICASH.php qui contient le code dedier a l'opération
 
-appeller  le fichier en lui passant les parammetres suivant  apr GET :
+Elements à modifier dans le fichier API_MOBICASH.php
+// URL Mobicach 
+url 
+//nom du compte
+rec
 
-// URL Mobicach  
-$url = "";
 
-//$numero de téléphone
-$tel= $_GET['tel'];
+// Variables à envoyer par get a API_MOBICASH.php
+//numero de téléphone
+tel
+//code du compte mobicash
+pin
+//montant a envoyer 
+montant
 
-//$code pin
-$pin= $_GET['pin'];
+Exemple https://www.votreserveur.com/API_MOBICASH.php?tel=70000000&pin=1010&montant=1000&
 
-//$montant a envoyer 
-$montant = $_GET['montant'];
+retour
+réussite de la transaction
+{"msg":
+   [
+      { 
+        "op":"success"
+      }
+   ]
+}
 
-//$rec nom du compte
-$rec=$_GET['rec';]
-
-Exemple https://www.votreserveur.com/API_MOBICASH.php?url=http://ipmobicash.com/webservice&tel=70000000&pin=1010&montant=1000&rec=demouser
+Echec de  la transaction
+{"msg":
+   [
+      { 
+        "op":"echec"
+      }
+   ]
+}
 
 
 ATTENTION  
