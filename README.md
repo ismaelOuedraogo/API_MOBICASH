@@ -3,7 +3,8 @@ API  JSON du systeme de  paiement Mobicash de l'Opérateur Burkinabè ONATEL
 
 # Préréquis: 
 
-1) Une connexion VPN entre votre serveur et celui de mobicash est nécessaire
+1) Une connexion VPN entre votre serveur et celui de mobicash est nécessaire (Nécéssite d'avoir au préalable contacter  le service commerciale pour utiliser la plateforme mobicash)
+
 2) Il est nécessaire d'avoir PHP 7+ avec  l'extension CURL activé
 
 3) le fichier API_MOBICASH.php qui contient le code dedier a l'opération
