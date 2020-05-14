@@ -1,42 +1,36 @@
-# API_MOBICASH
+# API_MOBICASH V1.0
 API  JSON du systeme de  paiement Mobicash de l'Opérateur Burkinabè ONATEL
 
-Préréquis: 
+# Préréquis: 
 
-1) Une connexion VPN entre votre serveur et celui de mobicash est nécéssaire
+1) Une connexion VPN entre votre serveur et celui de mobicash est nécessaire
+2) Il est nécessaire d'avoir PHP 7+ avec  l'extension CURL activé
 
-2) le fichier API_MOBICASH.php qui contient le code dedier a l'opération
+3) le fichier API_MOBICASH.php qui contient le code dedier a l'opération
 
-Elements à modifier dans le fichier API_MOBICASH.php
+## Modifier le fichier API_MOBICASH.php
 
-// URL Mobicach 
+```bash
+URL Mobicach 
+$url="[URL SERVEUR]"
 
-url 
+nom du compte
+$rec="[COMPTE]"
+```
+## Utilisation
 
-//nom du compte
+```bash
+numéro de téléphone =>tel
 
-rec
+code du compte mobicash =>pin
 
-
-// Variables à envoyer par get a API_MOBICASH.php
-
-//numero de téléphone
-
-tel
-
-//code du compte mobicash
-
-pin
-
-//montant a envoyer 
-
-montant
+montant à envoyer =>montant
 
 Exemple https://www.votreserveur.com/API_MOBICASH.php?tel=70000000&pin=1010&montant=1000
 
-retour
+##retour
 
-réussite de la transaction
+## réussite de la transaction
 
 {"msg":
    [
@@ -46,7 +40,7 @@ réussite de la transaction
    ]
 }
 
-Echec de  la transaction
+## Échec de  la transaction
 
 {"msg":
    [
@@ -56,7 +50,11 @@ Echec de  la transaction
    ]
 }
 
-
-ATTENTION 
+```
+## ATTENTION 
 
 je ne suis lier de prêt ou de loin au service MOBICASH qui est un produit de l'opérateur Maroc Télécom 
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
